@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import "./index.css";
 import "./Components/styles/header.css";
-import { Header } from "./Components/Header";
+
 import { FondoImagen } from "./Components/FondoImagen";
 import { GraficaPh } from "./Components/GraficaPh";
 import { GraficaTemperaura } from "./Components/GraficaTemperaura";
@@ -11,7 +11,7 @@ import { Container } from "@mui/material";
 import { GraficaSolidos } from "./Components/GraficaSolidos";
 import { Titulo } from "./Components/Titulo";
 import clientSocket from "./Network";
-import { createTheme } from '@mui/material/styles';
+
 import NavBar from "./Components/NavBar";
 import "./Components/styles/responsive.css";
 
@@ -21,11 +21,7 @@ import "./Components/styles/responsive.css";
 
 function App() {
 
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  
 
   const [data, setData] = useState({
     date: [],
@@ -144,7 +140,7 @@ function App() {
           
         </section>
         <section id="GraficaTemp">
-          <Titulo titulo="Temperatura" darkMode={darkMode} />
+          <Titulo titulo="Temperatura" />
           <div className="box">
             <GraficaTemperaura
               data={data.date.map((date, index) => ({
@@ -166,7 +162,7 @@ function App() {
           
         </section>
         <section id="GraficaTurb">
-          <Titulo titulo="Turbidez" darkMode={darkMode}/>
+          <Titulo titulo="Turbidez" />
           <div className="box">
             <GraficaTurbidez
               data={data.date.map((date, index) => ({
@@ -187,7 +183,7 @@ function App() {
           </div>
         </section>
         <section id="GraficaSolidos">
-          <Titulo titulo="Residuos Sólidos" darkMode={darkMode}/>
+          <Titulo titulo="Residuos Sólidos"/>
           <div className="box">
             <GraficaSolidos
               data={data.date.map((date, index) => ({

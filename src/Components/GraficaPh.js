@@ -1,6 +1,6 @@
 import React, { useEffect} from "react";
 import {  LineStyle, createChart } from "lightweight-charts";
-import { Box, } from "@mui/material";
+import { Box } from "@mui/material";
 
 
 
@@ -9,8 +9,6 @@ export const GraficaPh = (props) => {
   const { data } = props;
   const chartContainerRef = React.useRef();
   
-
-  console.log(data);
 
   useEffect(() => {
     const chart = createChart(chartContainerRef.current);
