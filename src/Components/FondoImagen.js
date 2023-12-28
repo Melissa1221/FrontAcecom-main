@@ -1,10 +1,10 @@
 import React from 'react';
 import { Box, Typography} from '@mui/material';
 import fondo from '../images/fondo_celeste.jpg';
-
+import { useTranslation } from "react-i18next";
 
 export const FondoImagen = () => {
-  
+  const [t, i18n] = useTranslation("global");
   return (
     <Box sx={{
       minHeight: '100vh',
@@ -24,7 +24,7 @@ export const FondoImagen = () => {
       </Typography>
       
       <Typography className='texto' variant='subtitle1' sx={{ textAlign: 'center',  color: 'white' }}>
-        Se muestran datos de calidad de agua, presentando diversos indicadores como el nivel de pH, temperatura, turbidez, y residuos sólidos. 
+        {t("banner.subtitle")} 
       </Typography>
     </div>
 

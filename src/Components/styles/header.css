@@ -68,6 +68,19 @@ nav {
 
     
 }
+.lenguages{
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+.lenguages button{
+	margin: .1rem;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	
+}
 
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {
@@ -105,3 +118,4 @@ nav {
 		font-size: 1.5rem;
 	}
 }
+

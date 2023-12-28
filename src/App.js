@@ -14,6 +14,7 @@ import clientSocket from "./Network";
 
 import NavBar from "./Components/NavBar";
 import "./Components/styles/responsive.css";
+import { useTranslation } from "react-i18next";
 
 
 
@@ -21,6 +22,7 @@ import "./Components/styles/responsive.css";
 
 function App() {
 
+  const [t, i18n] = useTranslation("global");
   
 
   const [data, setData] = useState({
@@ -116,7 +118,7 @@ function App() {
         <FondoImagen  />
       </section>
       <Container >
-        <section id="GraficaPH" className="charts" >
+        <section id="GraficaPH" className="charts"  >
           <Titulo titulo="pH"  />
           <div className="box">
             <GraficaPh className="chart"
@@ -133,14 +135,14 @@ function App() {
               </div>
               
               <div className="text-box">
-                <p>Conocer el pH del agua es esencial para asegurar su calidad, proteger la salud y mantener el equilibrio de los ecosistemas acuáticos, además de influir en la eficacia del tratamiento de aguas y la agricultura.</p>
+                <p>{t("charts.description-ph")}</p>
               </div>
             </div>
           </div>
           
         </section>
         <section id="GraficaTemp">
-          <Titulo titulo="Temperatura" />
+          <Titulo titulo={t("titles.temperature")} />
           <div className="box">
             <GraficaTemperaura
               data={data.date.map((date, index) => ({
@@ -155,14 +157,14 @@ function App() {
                 </div>
               </div>
               <div className="text-box">
-                <p>La temperatura del agua es un factor muy importante para la vida en los ríos, lagos y mares. En los ríos, por ejemplo, la temperatura del agua influye en la cantidad de oxígeno que puede disolverse en ella.</p>
+                <p>{t("charts.description-temperature")}</p>
               </div>
             </div>
           </div>
           
         </section>
         <section id="GraficaTurb">
-          <Titulo titulo="Turbidez" />
+          <Titulo titulo={t("titles.turbidity")} />
           <div className="box">
             <GraficaTurbidez
               data={data.date.map((date, index) => ({
@@ -177,13 +179,13 @@ function App() {
                 </div>
               </div>
               <div className="text-box">
-                <p>La turbidez es una medida de la claridad del agua. La turbidez en el agua es causada por partículas en suspensión que interfieren con la dispersión de la luz. Estas partículas pueden ser arcilla, limo, algas, materia orgánica, materia inorgánica, etc.</p>
+                <p>{t("charts.description-turbidity")}</p>
               </div>
             </div>
           </div>
         </section>
         <section id="GraficaSolidos">
-          <Titulo titulo="Residuos Sólidos"/>
+          <Titulo titulo={t("titles.solidity")}/>
           <div className="box">
             <GraficaSolidos
               data={data.date.map((date, index) => ({
@@ -200,7 +202,7 @@ function App() {
               </div>
 
               <div className="text-box">
-                <p>Los sólidos totales disueltos (TDS) son una medida de la combinación de todas las partículas orgánicas e inorgánicas disueltas en el agua. Los sólidos totales disueltos son una medida de la calidad del agua.</p>
+                <p>{t("charts.description-solidity")}</p>
               </div>
             </div>
           </div>
