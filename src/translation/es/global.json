@@ -11,8 +11,8 @@
     "charts":{
         "description-ph": "Conocer el pH del agua es esencial para asegurar su calidad, proteger la salud y mantener el equilibrio de los ecosistemas acuáticos, además de influir en la eficacia del tratamiento de aguas y la agricultura.",
         "description-temperature": "La temperatura del agua es un indicador clave para comprender su estado y su capacidad de soportar la vida acuática, además de ser fundamental para controlar procesos industriales y ambientales.",
-        "description-turbidity": "La turbidez se refiere a la claridad o transparencia del agua, y es un indicador importante de la presencia de partículas suspendidas, sedimentos u otros materiales en el agua. Puede afectar la calidad del agua y la vida acuática.",
-        "description-solidity": "Los residuos sólidos son un indicador crítico de la calidad del ambiente acuático y la salud pública. Estos pueden ser de origen orgánico o inorgánico, y pueden ser biodegradables o no. Su presencia afecta la vida acuática y la salud humana."
+        "description-turbidity": "La turbidez se refiere a la claridad o transparencia del agua, y es un indicador importante de la presencia de partículas suspendidas, sedimentos u otros materiales en el agua.",
+        "description-solidity": "Los residuos sólidos son un indicador crítico de la calidad del ambiente acuático y la salud pública. Estos pueden ser de origen orgánico o inorgánico, y pueden ser biodegradables o no."
     },
     "titles":{
         "temperature": "Temperatura",

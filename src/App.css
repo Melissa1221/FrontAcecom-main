@@ -36,15 +36,16 @@ html{
     background:#79DBAC;
   }
 
-Container{
-  display: flex;;
-}
 
 
 .box {
-    display: flex;
+    
     align-items: center;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 80% 20%; 
+    gap: 10px; 
+
     
   }
 
@@ -80,8 +81,27 @@ Container{
     padding: 0;
     z-index: 10rem;
   }
-
+.chart{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+ 
   
+}
+.charts{
+  display: block;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
 
 
-  
+.grid-container {
+  display: grid;
+  grid-template-columns: 80% 20%; 
+  gap: 10px; 
+}
+

@@ -9,9 +9,12 @@ export const Titulo = ({titulo} ) => {
             textAlign: 'center', 
             color:'white',
             background:'linear-gradient(45deg, #0073e6, #00c6a7)',
-           
-            margin: '1rem',
+            marginBottom:'1rem',
+            marginTop:'1rem',
+            
             padding: '1rem',
+            width: '100%',
+
             
             }}>
             {titulo}

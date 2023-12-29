@@ -11,8 +11,8 @@
     "charts": {
         "description-ph": "Understanding the pH of water is essential to ensure its quality, protect health, and maintain the balance of aquatic ecosystems, as well as influence the effectiveness of water treatment and agriculture.",
         "description-temperature": "Water temperature is a key indicator to understand its state and its ability to support aquatic life, and it is also essential for controlling industrial and environmental processes.",
-        "description-turbidity": "Turbidity refers to the clarity or transparency of water and is an important indicator of the presence of suspended particles, sediments, or other materials in the water. It can affect water quality and aquatic life.",
-        "description-solidity": "Solid waste is a critical indicator of environmental quality and public health. These can be of organic or inorganic origin and can be biodegradable or not. Their presence affects aquatic life and human health."
+        "description-turbidity": "Turbidity refers to the clarity or transparency of water and is an important indicator of the presence of suspended particles, sediments, or other materials in the water. ",
+        "description-solidity": "Solid waste is a critical indicator of environmental quality and public health. These can be of organic or inorganic origin and can be biodegradable or not."
     },
     "titles": {
         "temperature": "Temperature",
