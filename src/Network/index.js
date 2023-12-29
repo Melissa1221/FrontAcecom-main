@@ -1,7 +1,7 @@
 const clientIO = require('socket.io-client')
 
 // Servicio externo
-const serverUrl = 'ws://localhost:5000'
+const serverUrl = 'https://water-quality-4jt1.onrender.com'
 
 const clientSocket = clientIO.connect(serverUrl)
 
